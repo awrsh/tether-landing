@@ -1,0 +1,33 @@
+$title-color : #000;
+$medium-Color : #534f4f;
+$desc-color : #999;
+$main-color : hsl(237deg 96% 62%);
+$light-color : #fff;
+
+
+.atributies{
+    padding: 50px;
+    background-color: #f5f8fc;
+    .atributies-title{
+        margin-bottom: 40px;
+        h2{
+            margin: 10px 0;
+        }
+        p{
+            color: $medium-Color;
+        }
+    }
+    .atribute-item{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        .title{
+            margin: 10px ;
+            font-size: 20px;
+        }
+        .desc{
+            color: $desc-color;
+            font-size: 14px;
+        }
+    }
+}

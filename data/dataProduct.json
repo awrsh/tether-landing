@@ -1,0 +1,42 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "image": "image/Group 51.svg",
+            "persian": " تتر ",
+            "price_buy": 125060,
+            "price_sell": 123000,
+            "change": "22%",
+            "chart": "image/icons8-graph-32.png"
+        },
+        {
+            "id": "2",
+            "image": "image/Group 52.svg",
+            "persian": " بایننس کوین ",
+            "price_buy": 32500,
+            "price_sell": 450000,
+            "change": "45%",
+            "chart": "image/icons8-graph-32.png"
+        },
+        {
+            "id": "3",
+            "image": "image/Group 53.svg",
+            "persian": " یو اس دی کوین ",
+            "price_buy": 85000,
+            "price_sell": 96215,
+            "change": "3%",
+            "chart": "image/icons8-graph-32.png"
+        },
+        {
+            "id": "4",
+            "image": "image/Group 54.svg",
+            "persian": " دای ",
+            "price_buy": 75500,
+            "price_sell": 83500,
+            "change": "35%",
+            "chart": "image/icons8-graph-32.png"
+        }
+       
+        
+    ]
+}

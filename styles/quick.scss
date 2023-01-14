@@ -1,0 +1,71 @@
+$title-color : #000;
+$medium-Color : #534f4f;
+$desc-color : #999;
+$main-color : hsl(237deg 96% 62%);
+$light-color : #fff;
+
+
+.quicka-access {
+    width: 100%;
+    padding: 50px;
+
+    .quicka-access-content {
+        .title {
+            margin-bottom: 50px;
+
+            h2 {
+                margin: 10px 0;
+            }
+
+            p {
+                color: $medium-Color;
+            }
+        }
+
+        .download-items {
+            .item {
+
+                padding: 20px 15px;
+                background-color: #f5f8fc;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                .name{
+                    margin-right: 10px;
+                    color: $desc-color;
+                }
+            }
+            .scan{
+                img{
+                    width: 70px;
+                    height: 70px;
+                    object-fit: cover;
+                }
+                .text{
+                    margin-right: 10px;
+                    span{
+                        color: $desc-color;
+                    }
+                    p{
+                        color: $medium-Color;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .quicka-ccess-img{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width :1200px) {
+    .quicka-access .quicka-ccess-img img{
+        width: 100%;
+    }
+}
