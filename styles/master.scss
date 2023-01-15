@@ -51,3 +51,35 @@ body{
         background-color: rgb(41, 48, 194);
     }
 }
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-20{
+    gap: 20px;
+}
+.block{
+    display: block;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.align-items-end{
+    align-items: end;
+}

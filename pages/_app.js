@@ -26,8 +26,6 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={textTheme}>
         <Component {...pageProps} />
       </ThemeProvider >
-     
-
     </CacheProvider  >
 
   )

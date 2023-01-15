@@ -32,9 +32,7 @@ export const Navbar = () => {
                         <ul className="btn-group">
                             <li><Link href="/" className="login">ورود</Link></li>
                             <li  className="register"><Link href="/" >ثبت نام</Link></li>
-
                         </ul>
-
                     </div>
                 </div>
             </div>
