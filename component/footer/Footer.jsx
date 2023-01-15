@@ -68,9 +68,7 @@ const Footer = () => {
                                 <Link href="/"> اینستاگرام </Link>
                                 <Link href="/"> تلگرام </Link>
                                 <Link href="/"> توییتر </Link>
-
                             </div>
-
                         </div>
                     </div>
                 </div>

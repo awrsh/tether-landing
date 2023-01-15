@@ -3,6 +3,7 @@ import {Box, Typography} from "@mui/material";
 import Chart from 'react-apexcharts'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import {useRouter} from "next/router";
 
 function index() {
   const series = [{
@@ -41,19 +42,36 @@ function index() {
     },
   }
   const [value, setValue] = useState('1');
-
+  const router = useRouter()
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const [valueTop, setValueTop] = useState('#chart');
+
+  const handleChangeTop = (event, newValue) => {
+    setValueTop(newValue);
+    router.push(newValue)
+  };
   return (
     <div className={'container'}>
-      <Box className={'flex chartWrapper'}>
+      <Box className={'topTabBar col-sm-12 col-md-6'}>
+        <Tabs
+          classes={{
+            indicator: 'indicatorStyles'
+          }}
+          value={valueTop} onChange={handleChangeTop} aria-label="basic tabs example">
+          <Tab disableTouchRipple value={'#chart'} label="نمودار قیمت"  />
+          <Tab disableTouchRipple value={'#cryptoInfo'} label="توضیح و معرفی" />
+          <Tab disableTouchRipple value={'#faq'} label="سوالات متداول" />
+        </Tabs>
+      </Box>
+      <Box className={'flex chartWrapper'} id={'chart'}>
         <Box className={'col-lg-6'}>
-          <Box className={'flex justify-content-space-between col-sm-12 mb-2'} sx={{padding:0}}>
-            <Box>
+          <Box className={'row justify-content-space-between col-sm-12 mb-2'} sx={{padding:0,rowGap: '10px'}}>
+            <Box className={'col-sm-12 col-md-6'}>
               <Typography fontWeight={'bolder'} fontSize={'22px'}>نمودار قیمت تتر</Typography>
             </Box>
-            <Box className={'chartTabBar'}>
+            <Box className={'chartTabBar col-sm-12 col-md-6'}>
               <Tabs
                 classes={{
                   indicator: 'indicatorStyles'

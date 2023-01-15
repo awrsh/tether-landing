@@ -16,7 +16,7 @@ function index() {
     <div className={'cryptoInfoWrapper'}>
       <Box className="container">
         <Box className={'cryptoInfoInnerWrapper'}>
-          <Box className={'col-lg-4 flex flexColumn cryptoInfo gap-15'}>
+          <Box className={'col-lg-4 col-md-6 col-sm-12 flex flexColumn cryptoInfo gap-15'}>
             <Box className={'col-xs-12 flex cryptoInfoInner gap-15'}>
               <Box className={'flex gap-10'}>
                 <Image src={Tether} alt=""/>
@@ -50,7 +50,7 @@ function index() {
               </Box>
             </Box>
           </Box>
-          <Box className={'col-lg-2 flex gap-10 flexColumn'}>
+          <Box className={'col-lg-2 col-md-6 col-sm-12 flex gap-10 flexColumn'}>
             <Box className={'flex align-items-center'} sx={{height: '32px'}}>
               <Typography fontSize={'14px'} color={'digigrey.main'}>قیمت تتر (USDT)</Typography>
             </Box>
@@ -59,7 +59,7 @@ function index() {
               <Typography fontSize={'16px'} color={'digigrey.main'}>(41,300) تومان</Typography>
             </Box>
           </Box>
-          <Box className={'col-lg-4 flex gap-15 flexColumn valueSliderWrapper'}>
+          <Box className={'col-lg-4 col-md-9 col-sm-12 flex gap-15 flexColumn valueSliderWrapper'}>
             <Box className={'flex align-items-center'} sx={{height: '32px'}}>
               <Typography fontSize={'14px'} color={'digigrey.main'}>محدوده قیمت (24 ساعته)</Typography>
             </Box>
@@ -72,8 +72,8 @@ function index() {
               </Stack>
             </Box>
           </Box>
-          <Box className={'col-lg-2 flex gap-15 flexColumn align-items-end justify-content-center'}>
-            <Button variant="contained" sx={{height:'50px', maxWidth:'200px',width:'100%'}} startIcon={<SwapHorizOutlinedIcon fontSize={'small'}/>}>خرید و فروش تتر</Button>
+          <Box className={'col-lg-2 col-md-3 col-sm-12 flex gap-15 flexColumn align-items-end justify-content-center'}>
+            <Button variant="contained" sx={{height:'50px',width:'100%'}} startIcon={<SwapHorizOutlinedIcon fontSize={'small'}/>}>خرید و فروش تتر</Button>
           </Box>
         </Box>
       </Box>

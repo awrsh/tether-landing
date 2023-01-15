@@ -8,6 +8,9 @@ import QuickAccess from '../component/qiuick-access/QuickAccess'
 import Questions from '../component/questions/Questions'
 import Infoteher from '../component/infoTether/index'
 import ChartExchangeTether from '../component/chartExchangeTether/index'
+import TextInfo from '../component/textInfo/index'
+import FAQ from '../component/FAQ/index'
+import RegisterOffCode from '../component/registerOffCode/index'
 
 
 // const DynamicComponentWithNoSSR = dynamic(() => import('../component/chartPrice/ChartPrice'), {
@@ -27,10 +30,13 @@ export default function Home() {
         {/* <DynamicComponentWithNoSSR/> */}
         <Infoteher/>
         <ChartExchangeTether/>
+        <TextInfo/>
         <Currency/>
         <Atributies/>
+        <FAQ/>
         <QuickAccess/>
         <Questions/>
+        <RegisterOffCode/>
         <Friends/>
         <Footer/>
       </main>

@@ -13,7 +13,9 @@
     font-family: 'kalamehweb';
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'kalamehweb';
     src: url('../public/fonts/woff/KalamehWeb-Medium.woff') format('woff');
