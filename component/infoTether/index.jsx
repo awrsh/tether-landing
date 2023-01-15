@@ -5,7 +5,7 @@ import Crypoinfo from '../infoTether/cryproInfo/index'
 
 function index() {
   return (
-    <Box>
+    <Box className={'infoWrapper'}>
         <Breadcrumb/>
         <Crypoinfo/>
     </Box>
