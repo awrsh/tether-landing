@@ -9,7 +9,7 @@ $light-color: #fff;
 }
 
 .infoWrapper {
-  background: #FAFBFF;
+  background: #fafbff;
 }
 
 .cryptoInfoWrapper {
@@ -85,7 +85,7 @@ $light-color: #fff;
 
 .chartTabBar {
   .MuiTabs-root {
-    background: #E9ECF3;
+    background: #e9ecf3;
     border-radius: 10px;
     padding: 5px;
   }
@@ -93,38 +93,37 @@ $light-color: #fff;
   .indicatorStyles {
     height: 100% !important;
     border-radius: 10px;
-    background: #FFFFFF;
+    background: #ffffff;
   }
 
   .MuiTab-root {
     z-index: 1;
-    color: #81848D;
+    color: #81848d;
     font-size: 14px;
     padding: 5px;
     min-height: 42px;
     width: 33%;
 
     &.Mui-selected {
-      color: #81848D;
+      color: #81848d;
     }
   }
 }
 .topTabBar {
-  margin-top:20px;
+  margin-top: 20px;
   .MuiTabs-root {
     border-radius: 10px;
     padding: 5px;
-
   }
-  .MuiTabs-flexContainer{
-    gap:10px;
+  .MuiTabs-flexContainer {
+    gap: 10px;
   }
 
   .indicatorStyles {
     height: 100% !important;
     border-radius: 20px;
-    background: #F3F6FF;
-    border: 1px solid #565DD2
+    background: #f3f6ff;
+    border: 1px solid #565dd2;
   }
 
   .MuiTab-root {
@@ -135,7 +134,7 @@ $light-color: #fff;
     min-height: 42px;
 
     &.Mui-selected {
-      color: #565DD2;
+      color: #565dd2;
     }
   }
 }
@@ -167,12 +166,16 @@ $light-color: #fff;
 
 .bottomShadow {
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     height: 300px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     width: 100%;
     left: 0;
     right: 0;
@@ -194,8 +197,7 @@ $light-color: #fff;
     position: absolute;
     left: 20px;
   }
-
-  .faqWrapperCard {
+  .apexcharts-canvas .faqWrapperCard {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -203,10 +205,34 @@ $light-color: #fff;
   }
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
 .registerOffCode {
   &.friends {
     width: 100%;
-    background-color: $light-color;
+    background-color: #f5f8fc;
     text-align: center;
     padding: 70px;
     @media (max-width: 576px) {
@@ -234,7 +260,6 @@ $light-color: #fff;
       .btn-main.white {
         background-color: $light-color;
         color: #000;
-
       }
     }
   }

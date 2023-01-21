@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
-import {Box, Typography} from "@mui/material";
+import React, { useState } from 'react'
+import { Box, Typography } from "@mui/material";
 import Chart from 'react-apexcharts'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
+import FormTabPrice from '../../buySell/index'
 
 function index() {
   const series = [{
@@ -53,45 +54,47 @@ function index() {
     router.push(newValue)
   };
   return (
-    <div className={'container'}>
+    <>
       <Box className={'topTabBar col-sm-12 col-md-6'}>
         <Tabs
           classes={{
             indicator: 'indicatorStyles'
           }}
           value={valueTop} onChange={handleChangeTop} aria-label="basic tabs example">
-          <Tab disableTouchRipple value={'#chart'} label="نمودار قیمت"  />
+          <Tab disableTouchRipple value={'#chart'} label="نمودار قیمت" />
           <Tab disableTouchRipple value={'#cryptoInfo'} label="توضیح و معرفی" />
           <Tab disableTouchRipple value={'#faq'} label="سوالات متداول" />
         </Tabs>
       </Box>
-      <Box className={'flex chartWrapper'} id={'chart'}>
-        <Box className={'col-lg-6'}>
-          <Box className={'row justify-content-space-between col-sm-12 mb-2'} sx={{padding:0,rowGap: '10px'}}>
-            <Box className={'col-sm-12 col-md-6'}>
-              <Typography fontWeight={'bolder'} fontSize={'22px'}>نمودار قیمت تتر</Typography>
+      <Box className=" ">
+        <Box className={'flex chartWrapper flex-wrap'} sx={{paddingBlock: "30px"}} id={'chart'}>
+          <Box className={'col-lg-7 col-12'}>
+            <Box className={'row justify-content-space-between col-sm-12 mb-2'} sx={{ padding: 0, rowGap: '10px' }}>
+              <Box className={' '}>
+                <Typography fontWeight={'bolder'} fontSize={'22px'}>نمودار قیمت تتر</Typography>
+              </Box>
+              <Box className={'chartTabBar '}>
+                <Tabs
+                  classes={{
+                    indicator: 'indicatorStyles'
+                  }}
+                  value={value} onChange={handleChange} aria-label="basic tabs example">
+                  <Tab value={'1'} label="روزانه" />
+                  <Tab value={'2'} label="هفتگی" />
+                  <Tab value={'3'} label="ماهانه" />
+                </Tabs>
+              </Box>
             </Box>
-            <Box className={'chartTabBar col-sm-12 col-md-6'}>
-              <Tabs
-                classes={{
-                  indicator: 'indicatorStyles'
-                }}
-                value={value} onChange={handleChange} aria-label="basic tabs example">
-                <Tab value={'1'} label="روزانه"  />
-                <Tab value={'2'} label="هفتگی" />
-                <Tab value={'3'} label="ماهانه" />
-              </Tabs>
+            <Box sx={{ border: '1px solid #ccc', borderRadius: '10px' }}>
+              <Chart toolbar={false} options={options} series={series} type="area" height={425} />
             </Box>
           </Box>
-          <Box sx={{border: '1px solid #ccc', borderRadius: '10px'}}>
-            <Chart toolbar={false} options={options} series={series} type="area" height={350}/>
+          <Box className={'col-lg-5 col-12'}>
+            <FormTabPrice />
           </Box>
-        </Box>
-        <Box classNmame={'col-lg-6'}>
-
         </Box>
       </Box>
-    </div>
+    </>
   )
 }
 

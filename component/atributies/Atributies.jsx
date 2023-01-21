@@ -7,12 +7,7 @@ const Atributies = () => {
     return (
         <div className="atributies">
             <div className="container">
-                <div className="atributies-title">
-                    <h2>  ویژگی های دیجیکس 24</h2>
-                    <p>صرافی دیجیکس کوین مرکز معاملات انواع استیل کوین</p>
-                </div>
-                <div className="row">
-                    
+                <div className="row flex-wrap">
                     {
                         atributeItems.map((item,index) => (
                            

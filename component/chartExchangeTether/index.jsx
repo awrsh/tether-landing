@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import dynamic from 'next/dynamic'
+// import FormTabPrice from '../../component/buySell/index'
 
 const DynamicComponentWithNoSSR = dynamic(
   () => import ('./cryproChart/index'),
@@ -8,7 +9,7 @@ const DynamicComponentWithNoSSR = dynamic(
 )
 function index() {
   return (
-    <Box>
+    <Box className=''>
         <DynamicComponentWithNoSSR/>
     </Box>
   )

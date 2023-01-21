@@ -5,7 +5,7 @@ const Footer = () => {
 
         <footer>
             <div className="container padding">
-                <div className="row">
+                <div className="row flex-wrap">
                     <div className="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div className="footer-item">
                             <div className="logo"><img src="image/logoFa.png" alt="" /></div>
